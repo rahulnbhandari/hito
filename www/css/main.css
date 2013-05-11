@@ -1,0 +1,126 @@
+html {
+  overflow-y: scroll;
+}
+body {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.text-info {
+  color: #071d80;
+}
+.text-danger {
+  color: #64785c;
+}
+.navbar-form input.ng-invalid.ng-dirty {
+  background-color: #64785c;
+}
+.daily-deal img {
+  max-width: 200px;
+}
+.landing-info {
+  margin-left: 60px;
+}
+.large-form input[type='text'],
+.large-form input[type='email'],
+.large-form input[type='date'] {
+  font-size: 24px;
+  height: 30px;
+}
+.large-form label {
+  font-size: 18px;
+}
+.result-panel {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-right: -20px;
+  padding-top: 20px;
+}
+a {
+  text-decoration: none;
+}
+.accordion-heading {
+  background-color: #030d37;
+  color: #DDD;
+  font-weight: bold;
+}
+a.accordion-toggle {
+  text-decoration: none;
+  color: #ddd;
+}
+a.accordion-toggle:hover {
+  text-decoration: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+}
+.btn-huge {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 13px;
+}
+#surveyDialog {
+  width: 800px;
+  margin: 0 0 0 -400px;
+}
+.bottom-push {
+  margin-bottom: 2px;
+}
+.activity-panel {
+  background: none repeat scroll 0 0 #EEEEEE;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 2px;
+  padding: 2px 4px;
+}
+.activity-panel p {
+  line-height: 13px;
+}
+.navbar .nav > li {
+  line-height: 30px;
+}
+.controls label {
+  display: inline-block;
+  width: 221px;
+}
+.itinerary .itin-item {
+  background: none repeat scroll 0 0 #EEEEEE;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 2px;
+  padding: 2px 4px;
+}
+.itinerary .itin-item .time-label {
+  display: inline-block;
+  width: 100px;
+}
+.itinerary .itin-item .time {
+  display: inline-block;
+  width: 150px;
+}
+.itinerary .itin-bottom {
+  display: block;
+  height: 45px;
+  margin: 7px 0;
+}
+.itinerary .itin-bottom .btn {
+  margin-left: 7px;
+}
+.itinerary .btn-mini {
+  margin-left: 2px;
+}
+.interest {
+  width: 200px;
+}
+.like-button {
+  background: url("/img/heart.png") no-repeat scroll 0 0 transparent;
+  height: 32px;
+  width: 32px;
+  float: right;
+}
+.unlike-button {
+  background: url("/img/noheart.png") no-repeat scroll 0 0 transparent;
+}
+.item-type {
+  margin-bottom: 9px;
+  margin-top: -14px;
+}

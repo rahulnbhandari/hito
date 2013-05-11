@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"
+                             ng-app>
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description"
+          content="">
+    <meta name="viewport"
+          content="width=device-width">
+    <link rel="stylesheet"
+          href="css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet"
+          href="css/bootstrapSwitch.css">
+    <link rel="stylesheet"
+          href="css/main.css">
+          <!--[if lt IE 9]>
+                                                                                                                                    <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+                                                                                                                                  <![endif]-->
+  </head>
+  <body>
+          <!--[if lt IE 7]>
+                                                                                                                                    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+                                                                                                                                  <![endif]-->
+    <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar"
+             data-toggle="collapse"
+             data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand"
+             href="/index.html"><img src="img/logo.png"
+                                     alt="logo" /></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/index.html">Home</a></li>
+            </ul>
+            <form class="navbar-form pull-right"
+                  ng-controller="loginController"
+                  novalidate>
+              <input name="userName"
+                     class="span2"
+                     type="email"
+                     placeholder="Email"
+                     ng-model="user.name"
+                     required>
+              <span ng-show="form.user.$dirty && form.user.$invalid">*</span>
+              <input name="pwd"
+                     class="span2"
+                     type="password"
+                     placeholder="Password"
+                     ng-model="user.password"
+                     required>
+              <span ng-show="form.pwd.$dirty && form.pwd.$invalid">*</span>
+              <button type="submit"
+                      class="btn"
+                      ng-click="login(user)">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container"
+         ng-controller="searchController">
+      <div class="row result-panel">
+        <!-- LEFT PANEL -->
+        <div class="span4"
+             id="leftPanel">
+          <div id="runningTotal"
+               class="lead">
+            Current Cost: <span class="text-info">$1,968</span>
+          </div>
+          <div class="accordion"
+               id="criteriaAccordion">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle"
+                   data-toggle="collapse"
+                   data-parent="#criteriaAccordion"
+                   href="#collapseOne">
+                  <img src="img/icon_local.png"
+                       alt="icon" />&nbsp;Local Events
+                </a>
+              </div>
+              <div id="collapseOne"
+                   class="accordion-body collapse in">
+                <div class="accordion-inner">
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>Hometown Heroes Day</div>
+                    <p class="muted"><small>Brooklyn Center for the Performing Arts at Brooklyn College (BCBC) presents Fiddler on the Roof on Sunday, April 14, 2013 at 3pm. </small></p>
+                  </div>
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>National Aviation Day</div>
+                    <p class="muted"><small>Maintaining and operating the Intrepid required the hard work and talents of each member of the ship’s 3,000-person crew...</small></p>
+                  </div>
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>Open Mic Poetry at the Back Fence</div>
+                    <p class="muted"><small>Do you read your poetry in your dark room thinking no one will listen to you? You’re frightened what people will think...</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle"
+                   data-toggle="collapse"
+                   data-parent="#criteriaAccordion"
+                   href="#collapseTwo">
+                  <img src="img/icon_food.png"
+                       alt="icon" />&nbsp;Food
+                </a>
+              </div>
+              <div id="collapseTwo"
+                   class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>Hometown Heroes Day</div>
+                    <p class="muted"><small>Brooklyn Center for the Performing Arts at Brooklyn College (BCBC) presents Fiddler on the Roof on Sunday, April 14, 2013 at 3pm. </small></p>
+                  </div>
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>National Aviation Day</div>
+                    <p class="muted"><small>Maintaining and operating the Intrepid required the hard work and talents of each member of the ship’s 3,000-person crew...</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle"
+                   data-toggle="collapse"
+                   data-parent="#criteriaAccordion"
+                   href="#collapseThree">
+                  <img src="img/icon_nightlife.png"
+                       alt="icon" />&nbsp;Nightlife
+                </a>
+              </div>
+              <div id="collapseThree"
+                   class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>Hometown Heroes Day</div>
+                    <p class="muted"><small>Brooklyn Center for the Performing Arts at Brooklyn College (BCBC) presents Fiddler on the Roof on Sunday, April 14, 2013 at 3pm. </small></p>
+                  </div>
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>National Aviation Day</div>
+                    <p class="muted"><small>Maintaining and operating the Intrepid required the hard work and talents of each member of the ship’s 3,000-person crew...</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle"
+                   data-toggle="collapse"
+                   data-parent="#criteriaAccordion"
+                   href="#collapseFour">
+                  <img src="img/icon_outdoors.png"
+                       alt="icon" />&nbsp;Outdoors
+                </a>
+              </div>
+              <div id="collapseFour"
+                   class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>Hometown Heroes Day</div>
+                    <p class="muted"><small>Brooklyn Center for the Performing Arts at Brooklyn College (BCBC) presents Fiddler on the Roof on Sunday, April 14, 2013 at 3pm. </small></p>
+                  </div>
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>National Aviation Day</div>
+                    <p class="muted"><small>Maintaining and operating the Intrepid required the hard work and talents of each member of the ship’s 3,000-person crew...</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle"
+                   data-toggle="collapse"
+                   data-parent="#criteriaAccordion"
+                   href="#collapseFive">
+                  <img src="img/icon_pets.png"
+                       alt="icon" />&nbsp;Pets
+                </a>
+              </div>
+              <div id="collapseFive"
+                   class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>Hometown Heroes Day</div>
+                    <p class="muted"><small>Brooklyn Center for the Performing Arts at Brooklyn College (BCBC) presents Fiddler on the Roof on Sunday, April 14, 2013 at 3pm. </small></p>
+                  </div>
+                  <div class="activity-panel">
+                    <button class="btn btn-danger btn-mini pull-right"><i class="icon icon-white icon-plus"></i></button>
+                    <div>National Aviation Day</div>
+                    <p class="muted"><small>Maintaining and operating the Intrepid required the hard work and talents of each member of the ship’s 3,000-person crew...</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="span8"
+             id="rightPanel">
+          <h3>Itinerary for New York City, NY</h3>
+          <div class="itinerary">
+            <div ng-repeat="i in itinerary">
+              <div class="itin-item">
+                <button class="btn btn-mini pull-right"><i class="icon icon-remove"></i></button>
+                <button class="btn btn-mini pull-right"><i class="icon icon-thumbs-up"></i></button>
+                <button class="btn btn-mini pull-right"><i class="icon icon-thumbs-down"></i></button>
+                <button class="btn btn-mini pull-right"><i class="icon icon-arrow-up"></i></button>
+                <button class="btn btn-mini pull-right"><i class="icon icon-arrow-down"></i></button>
+                <div>
+                  <div class="time-label"><strong>From:</strong></div><div class="time">{{i.arrivalTime}}</div>
+                </div>
+                <div>
+                  <div class="time-label"><strong>To:</strong></div><div class="time">{{i.departureTime}}</div>
+                </div>
+                <h5>{{i.location}}</h5>
+                <div class="muted item-type"><small>({{i.locationType}})</small></div>
+                <div class="text-info">{{i.address}}<br/>{{i.phone}}</div>
+                <div><i>{{i.description}}</i></div>
+                <div ng-show='i.price' class="text-success">Price: ${{i.price}}</div>
+                <div class="muted" ng-show='i.notes'><small>Notes: {{i.notes}}</small></div>
+              </div>
+              <div ng-hide="i.last"
+                   class="text-center"><i class="icon icon-arrow-down"></i></div>
+            </div>
+            <div class="itin-bottom">
+              <button class="btn btn-danger btn-large pull-right">Save</button>
+              <a href="index.html" class="btn btn-large pull-right">Start Over</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="surveyDialog"
+           class="modal hide fade span12">
+        <div class="modal-header">
+          <h3>Instructions</h3>
+          <p>This is your first time here. Please take a moment to tell us what you like to do:</p>
+        </div>
+        <div class="modal-body">
+          <div ng-repeat="i in interests"
+               class="span3 interest bottom-push">
+            <div class="like-button unlike-button">&nbsp;</div> 
+            <div class="muted"><small>{{i}}</small></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#"
+             class="btn btn-danger"
+             data-dismiss="modal"
+             aria-hidden="true">View Your Itinerary</a>
+        </div>
+      </div>
+    </div> <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/jquery.backstretch.min.js"></script>
+    <script src="js/vendor/jquery-easing.js"></script>
+    <script src="js/vendor/bootstrapSwitch.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/searchcontroller.js"></script>
+    <script src="js/logincontroller.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>
